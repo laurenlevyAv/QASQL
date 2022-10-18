@@ -1,0 +1,11 @@
+Use sakila;
+SELECT * FROM sakila.actor;
+SELECT * FROM sakila.actor WHERE first_name = 'John';
+SELECT * FROM sakila.actor WHERE last_name = 'Neeson';
+SELECT * FROM sakila.actor WHERE actor_id % 10 = 0;
+SELECT description FROM sakila.film WHERE film_id = 100;
+SELECT title FROM sakila.film WHERE rating = 'R';
+SELECT title from sakila.film WHERE special_features = 'Deleted Scenes';
+SELECT DISTINCT last_name from sakila.actor;
+SELECT * FROM last_name_count_query WHERE last_name_count > 1;
+
